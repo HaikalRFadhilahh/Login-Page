@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Register</title>
+</head>
+<body class="bg-[#BAD7E9]">
+    <div class="w-screen h-screen flex items-center justify-center overflow-auto">
+        <div class="w-4/5 h-3/5 bg-white rounded-[5px] max-w-[300px] min-h-[450px] max-h-[430px] sm:-translate-y-10 md:-translate-y-[150px] lg:-translate-y-10 py-3 px-2 flex items-center flex-col">
+            <!-- Logo -->
+            <div class="w-3/4 max-w-[80px] aspect-square bg-red-300 rounded-full bg-center bg-cover" style="background-image: url('./IMG/book.jpg');"></div>
+            <!-- Hero Text -->
+            <div class="w-full h-fit text-center my-2" style="font-family: Inter;">
+                <h2 class="font-medium text-md">Selamat Datang</h2>
+                <p class="text-sm font-normal text-slate-400">Silahkan Login untuk melanjutkan</p>
+            </div>
+            <!-- Nama -->
+            <form action="/store" method="POST" class="px-3">
+                <div class="w-full h-fit my-1" style="font-family: Inter;">
+                    <label for="nama">
+                        <h2 class="text-sm text-slate-900 my-1">Nama : </h2>
+                        <input type="text" id="nama" name="nama" class="w-full border-2 border-slate-300 rounded-[4px] px-2 py-1 placeholder:text-sm placeholder:text-slate-400 placeholder:font-light focus:outline-none text-md font-normal text-slate-400" style="font-family: Inter;" required autocomplete="off" placeholder="Your Name">
+                    </label>
+                </div>
+                <!-- Email -->
+                <div class="w-full h-fit my-1" style="font-family: Inter;">
+                    <label for="email">
+                        <h2 class="text-sm text-slate-900 my-1">Email : </h2>
+                        <input type="email" id="email" name="email" class="w-full border-2 border-slate-300 rounded-[4px] px-2 py-1 placeholder:text-sm placeholder:text-slate-400 placeholder:font-light focus:outline-none text-md font-normal text-slate-400" style="font-family: Inter;" required autocomplete="off" placeholder="Your Email">
+                    </label>
+                </div>
+                <!-- Password -->
+                <div class="w-full h-fit my-1" style="font-family: Inter;">
+                    <label for="Password">
+                        <h2 class="text-sm text-slate-900 my-1">Password : </h2>
+                        <div class="w-full h-fit flex">
+                            <input type="password" id="Password" name="Password" class="w-[80%] border-2 border-slate-300 rounded-l-[4px] px-2 py-1 placeholder:text-sm placeholder:text-slate-400 placeholder:font-light focus:outline-none text-md font-normal text-slate-400" style="font-family: Inter;" required autocomplete="off" placeholder="Your Password">
+                            <div class="w-[20%] h-fit py-1 px-2 border-l-0 border-t-2 border-r-2 border-b-2 rounded-r-[4px] border-slate-300 flex items-center justify-center" id="hilang" onclick="show()"><i class="material-icons">visibility_off</i></div>
+                            <div class="w-[20%] h-fit py-1 px-2 border-l-0 border-t-2 border-r-2 border-b-2 rounded-r-[4px] border-slate-300 hidden items-center justify-center" id="tampil" onclick="show()"><i class="material-icons">visibility</i></div>
+                        </div>
+                    </label>
+                </div>
+                <button type="button" class="w-full my-3 bg-[#B4E4FF] py-1 rounded-md" style="font-family: Inter;">Login</button>
+                <p class="text-xs text-center" style="font-family: Inter;">already have an account, <span class="text-blue-500"><a href="index.html">Login Here!</a></span></p>
+            </form>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
